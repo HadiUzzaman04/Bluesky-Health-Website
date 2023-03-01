@@ -10,8 +10,9 @@
 </head>
 
 <body>
+    <!--Header-->
     <nav class="sticky top-0 z-10 border-b border-gray-200 bg-white">
-        <div class="bg-white mx-auto py-6">
+        <div class="bg-white mx-auto py-6 max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[45rem]">
             <div class=" flex items-center justify-between">
                 <!--Logo-->
                 <div class="pt-2 ml-5">
@@ -19,26 +20,177 @@
                 </div>
                 <!--Nav Item-->
                 <div class="space-x-5 pr-20 text-black">
-                    <a href="#" class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Home</a>
-                    <a href="#" class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">About Us</a>
-                    <a href="#" class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Our Experts</a>
-                    <a href="#" class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Service</a>
-                    <a href="#" class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Contact Us</a>
-                    <a href="#" class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Login</a>
-                    <a href="#" class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Register</a>
-
-
-
-
-
+                    <a href="#"
+                        class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Home</a>
+                    <a href="#"
+                        class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">About Us</a>
+                    <a href="#" class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Our
+                        Experts</a>
+                    <a href="#"
+                        class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Service</a>
+                    <a href="#"
+                        class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Contact
+                        Us</a>
+                    <a href="#"
+                        class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Login</a>
+                    <a href="#"
+                        class="hover:bg-blue-400 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Register</a>
 
                 </div>
-
             </div>
-
         </div>
-
     </nav>
+    <!--Header End-->
+
+    <!--Hero Section-->
+    <section>
+        <div class="relative">
+            <ul id="slider">
+                <li class="h-[350px] relative">
+                    <img class="h-full w-full object-cover" src="img/slider-image-1-1920x700.jpg" alt="slider">
+                    <div class="absolute top-0 left-0 h-full w-full flex">
+                        <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20"> Search the Best Doctor</h2>
+                    </div>
+                </li>
+                <li class="h-[350px] relative hidden">
+                    <img class="h-full w-full object-cover" src="img/slider-image-2-1920x700.jpg" alt="slider">
+                    <div class="absolute top-0 left-0 h-full w-full flex">
+                        <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20"> Search the Best Doctor</h2>
+                    </div>
+                </li>
+                <li class="h-[350px] relative hidden">
+                    <img class="h-full w-full object-cover" src="img/slider-image-3-1920x700.jpg" alt="slider">
+                    <div class="absolute top-0 left-0 h-full w-full flex">
+                        <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20"> Search the Best Doctor</h2>
+                    </div>
+                </li>
+            </ul>
+            <div class="absolute top-0 left-0 flex h-full w-full">
+                <div class="my-auto px-4 w-full flex justify-between">
+                    <button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                        </svg>
+                    </button>
+                    <button onclick="next" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mt-10 ml-10 mr-10  ">
+            <div class="grid grid-cols-3 gap-5 mt-10 max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem]">
+                <div class="bg-gray-200 hover:bg-white rounded-xl shadow-xl hover:shadow-2xl hover:drop-shadow-2xl drop-shadow-lg px-5 pt-5 pb-10 space-y-5">
+                    <div class="h-24 w-20 mx-auto">
+                        <img class="h-full w-full" src="img/heart.jpg" >
+                    </div>
+                    <p class="text-center font-medium text-base">Operation Theater</p>
+                    <p class="text-sm text-center font-medium">
+                        We have modern and well furnished operation theatre in the city
+                    </p>
+                </div>
+                <div class="bg-gray-200 hover:bg-white rounded-xl shadow-xl hover:shadow-2xl hover:drop-shadow-2xl drop-shadow-lg px-5 pt-5 pb-10 space-y-5">
+                    <div class="h-24 w-20 mx-auto">
+                        <img class="h-full w-full" src="img/ambulance.jpg" >
+                    </div>
+                    <p class="text-center font-medium text-base">Emergency Services</p>
+                    <p class="text-sm text-center font-medium">
+                        If you need any kind of emergency services, we are always available
+                    </p>
+                </div>
+                <div class="bg-gray-200 hover:bg-white rounded-xl shadow-xl hover:shadow-2xl hover:drop-shadow-2xl drop-shadow-lg px-5 pt-5 pb-10 space-y-5">
+                    <div class="h-24 w-20 mx-auto">
+                        <img class="h-full w-full" src="img/doctor.png" >
+                    </div>
+                    <p class="text-center font-medium text-base">Qualified Doctors</p>
+                    <p class="text-sm text-center font-medium">
+                        We have the best qualified doctors to serve our valuable patients
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Our Experts-->
+    <section id="expert" class="bg-gray-200 mt-14">
+        <div class=" px-5 mx-auto text-center max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem]">
+            <h2 class="text-4xl font-semibold text-center pt-10 pb-10 ">Our Experts</h2>
+            <p class="text-sm text-center font-medium pb-10 ">Lorem ipsum dolor sit amet, nibh saperet te pri, at nam diceret disputationi. Quo an consul impedit, usu possim evertitur dissentiet ei, ridens minimum nominavi et vix.</p>
+            <!--service Container-->
+            <div class="grid grid-cols-4 gap-5 mb-5 ">
+                <!--Services 1-->
+                <div class="rounded-lg bg-gray-200">
+                    <div class="h-52 w-full">
+                        <img src="img/user1.jpg" class="w-full h-full rounded-t-lg" alt="expert" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dr. Sattar</h5>
+                    </div>
+                    <div class="h-12 w-30 text-sm">
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">MBBS, FCPS, FRCS</p>
+                    </div>
+                    <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
+                        <a href="" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 md:mt-5 md:font-thin xs:mt-8 xs:text-sm sm:font-thin">Read more</a>
+                    </div>
+                </div>
+                <div class="rounded-lg bg-gray-200">
+                    <div class="h-52 w-full">
+                        <img src="img/user1.jpg" class="w-full h-full rounded-t-lg" alt="expert" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dr. Sattar</h5>
+                    </div>
+                    <div class="h-12 w-30 text-sm">
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">MBBS, FCPS, FRCS</p>
+                    </div>
+                    <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
+                        <a href="" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 md:mt-5 md:font-thin xs:mt-8 xs:text-sm sm:font-thin">Read more</a>
+                    </div>
+                </div>
+                <div class="rounded-lg bg-gray-200">
+                    <div class="h-52 w-full">
+                        <img src="img/user1.jpg" class="w-full h-full rounded-t-lg" alt="expert" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dr. Sattar</h5>
+                    </div>
+                    <div class="h-12 w-30 text-sm">
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">MBBS, FCPS, FRCS</p>
+                    </div>
+                    <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
+                        <a href="" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 md:mt-5 md:font-thin xs:mt-8 xs:text-sm sm:font-thin">Read more</a>
+                    </div>
+                </div>
+                <div class="rounded-lg bg-gray-200">
+                    <div class="h-52 w-full">
+                        <img src="img/user1.jpg" class="w-full h-full rounded-t-lg" alt="expert" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dr. Sattar</h5>
+                    </div>
+                    <div class="h-12 w-30 text-sm">
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">MBBS, FCPS, FRCS</p>
+                    </div>
+                    <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
+                        <a href="" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 md:mt-5 md:font-thin xs:mt-8 xs:text-sm sm:font-thin">Read more</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex justify-center pb-5">
+                <a href="#" class=" p-3 px-6 pt-2 text-white bg-green-400 rounded-full baseline font-semibold hover:bg-green-500">Explore
+                    All</a>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
