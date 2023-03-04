@@ -18,7 +18,16 @@ module.exports = {
       // => @media (min-width: 1280px) { ... } 
       xxl: {'min': '2500px','max': '2561px'},    
     },
-    extend: {},
+    extend: {
+      colors:{
+        'myblue': {
+          500: '#043A90'
+        },
+        'mylightblue': {
+          100: '#00B0DA'
+        },
+    },
   },
   plugins: [],
+}
 }
