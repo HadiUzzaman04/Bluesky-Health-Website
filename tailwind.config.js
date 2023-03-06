@@ -26,7 +26,11 @@ module.exports = {
         'mylightblue': {
           100: '#00B0DA'
         },
+        
     },
+    fontFamily:{
+      body:['Montserrat']
+   },
   },
   plugins: [],
 }
