@@ -11,11 +11,11 @@
 
 <body class="font-body">
     <!--Header-->
-    <nav class="sticky top-0 z-10 border-b border-gray-200 bg-white shadow-lg drop-shadow-lg">
-        <div class="bg-white mx-auto py-6 max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[45rem]">
+    <nav class="sticky top-0 z-10 border-b border-gray-200 bg-white shadow-xl drop-shadow-xl">
+        <div class="bg-white mx-auto py-4 max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[45rem]">
             <div class=" flex items-center justify-between">
                 <!--Logo-->
-                <div class=" h-16 w-52">
+                <div class=" h-12 w-52">
                     <img src="img/logo.jpg" class="h-full w-full object-cover" alt="logo">
                 </div>
                 <!--Nav Item-->
@@ -37,7 +37,6 @@
                         class="hover:bg-mylightblue-100 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Login</a>
                     <a href="#"
                         class="hover:bg-mylightblue-100 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Register</a>
-
                 </div>
             </div>
         </div>
@@ -55,43 +54,32 @@
                             Doctor</h2>
                     </div>
                 </li>
-                <li class="h-[350px] relative hidden">
-                    <img class="h-full w-full object-cover" src="img/slider-image-2-1920x700.jpg" alt="slider">
-                    <div class="absolute top-0 left-0 h-full w-full flex">
-                        <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20"> Search the Best
-                            Doctor</h2>
-                    </div>
-                </li>
-                <li class="h-[350px] relative hidden">
-                    <img class="h-full w-full object-cover" src="img/slider-image-3-1920x700.jpg" alt="slider">
-                    <div class="absolute top-0 left-0 h-full w-full flex">
-                        <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20"> Search the Best
-                            Doctor</h2>
-                    </div>
-                </li>
             </ul>
-            <div class="absolute top-0 left-0 flex h-full w-full">
-                <div class="my-auto px-4 w-full flex justify-between">
-                    <button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
-                        </svg>
-                    </button>
-                    <button onclick="next" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </button>
+            <div class="absolute bottom-[-50px] left-[300px] bg-white p-4 rounded-md shadow-xl">
+                <div class="h-[100px] w-[700px]">
+                    <div class="h-full w-full mx-auto my-auto rounded-full">
+                        <label for="Department"
+                            class="block text-md font-semibold text-gray-900 dark:text-white">Select A
+                            Department<label>
+                                <select id="Department"
+                                    class="bg-gray-50 border border-gray-300 text-black text-md font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[550px] p-2.5 dark:bg-mylightblue-100 dark:border-mylightblue-100 dark:placeholder-black dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option selected>Select Department</option>
+                                    <option>Neurology</option>
+                                    <option>Cardiology</option>
+                                    <option>Ophthalmology</option>
+                                    <option>Pediatric</option>
+                                </select>
+                                <div class=" absolute top-[38px] right-[50px]">
+                                    <button
+                                        class="bg-myblue-500 hover:bg-blue-600 px-5 py-2 text-white shadow-xl rounded-md">Search</button>
+                                </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="mt-7  mx-auto max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem]">
+        <div class=" mt-20  mx-auto max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem]">
             <div
                 class="grid grid-cols-3 gap-5 mt-12 md:grid-cols-3 md:pl-5 md:pr-5 sm:grid-cols-2 sm:gap-10 sm:p-5 xs:grid-cols-1 xs:p-5">
                 <div class="bg-white hover:bg-white rounded-2xl shadow-xl hover:shadow-2xl hover:drop-shadow-2xl drop-shadow-lg px-7 pt-7 pb-14 xs:pb-5 space-y-5 xs:space-y-1 xs:h-[260px]"
@@ -136,7 +124,8 @@
         <div
             class=" px-5 mx-auto text-center max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem]">
             <h2 class="text-4xl font-semibold text-center pt-10 pb-10 ">Our Experts</h2>
-            <p class="text-sm text-center font-medium pb-10 ">We have the most experienced doctors in all the departments to help you</p>
+            <p class="text-sm text-center font-medium pb-10 ">We have the most experienced doctors in all the
+                departments to help you</p>
             <!--Experts Container-->
             <div class="grid grid-cols-4 gap-5 mb-5 ">
                 <!--Experts 1-->
@@ -182,7 +171,7 @@
                         </div>
                     </div>
                     <div class="flex justify-end pt-5 mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
-                        <a href=""
+                        <a href="doctordetails.html"
                             class="font-medium  bg-blue-400 text-white rounded-md px-3 py-1 md:mt-5 md:font-thin xs:mt-8 xs:text-sm sm:font-thin">Read
                             more</a>
                     </div>
@@ -352,7 +341,8 @@
                         </h5>
                     </div>
                     <div class="h-12 w-30 text-sm">
-                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">we have the top doctors to take care of you</p>
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">we have the top doctors to take care
+                            of you</p>
                     </div>
                     <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
                         <a href=""
@@ -369,7 +359,8 @@
                         </h5>
                     </div>
                     <div class="h-12 w-30 text-sm">
-                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">we have the top doctors to take care of you</p>
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">we have the top doctors to take care
+                            of you</p>
                     </div>
                     <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
                         <a href=""
@@ -386,7 +377,8 @@
                         </h5>
                     </div>
                     <div class="h-12 w-30 text-sm">
-                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">we have the top doctors to take care of you</p>
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">we have the top doctors to take care
+                            of you</p>
                     </div>
                     <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
                         <a href=""

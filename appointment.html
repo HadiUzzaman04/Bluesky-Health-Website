@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home page</title>
+</head>
+
+<body class="font-body">
+    <!--Header-->
+    <nav class="sticky top-0 z-10 border-b border-gray-200 bg-white shadow-lg drop-shadow-lg">
+        <div class="bg-white mx-auto py-6 max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[45rem]">
+            <div class=" flex items-center justify-between">
+                <!--Logo-->
+                <div class=" h-12 w-52">
+                    <img src="img/logo.jpg" class="h-full w-full object-cover" alt="logo">
+                </div>
+                <!--Nav Item-->
+                <div class="space-x-5 pr-20 text-black">
+                    <a href="#"
+                        class="hover:bg-mylightblue-100 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Home</a>
+                    <a href="#"
+                        class="hover:bg-mylightblue-100 hover:text-white font-semibold px-2 py-1 hover:rounded-md">About
+                        Us</a>
+                    <a href="#"
+                        class="hover:bg-mylightblue-100 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Our
+                        Experts</a>
+                    <a href="#"
+                        class="hover:bg-mylightblue-100 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Service</a>
+                    <a href="#"
+                        class="hover:bg-mylightblue-100 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Contact
+                        Us</a>
+                    <a href="#"
+                        class="hover:bg-mylightblue-100 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Login</a>
+                    <a href="#"
+                        class="hover:bg-mylightblue-100 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--appointment Start-->
+    <section>
+        <div class="mt-7  mx-auto max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem]">
+            <div>
+                <p class="text-4xl font-semibold text-center md:text-2xl sm:text-2xl xs:text-xl">Make An Appointment</p>
+            </div>
+        </div>
+    </section>
+        <section id="appointment-form">
+        <div
+            class="container mx-auto my-20 w-1/2 md:my-20 md:w-1/2 sm:my-20 sm:w-full border xs:my-20 xs:w-full border-blue-500">
+            <div class="p-5 py-5 shadow-xl">
+                <h2 class="text-center text-3xl py-5 front-bold">Make An Appointment</h2>
+                <form id="contact" action="#" method="#">
+                    <div class="grid grid-cols-2 gap-5">
+                        <input type="text" id="first_name" name="first_name"
+                            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-blue-500"
+                            placeholder="First Name" required />
+                        <input type="text" id="last_name" name="last_name"
+                            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-blue-500"
+                            placeholder="Last Name" required />
+                            <select id="service" name="service"
+                            class="border border-gray-500 px-4 py-2 focus:outline-none focus:blue-green-500 col-span-2"
+                            required>
+                            <option>Select</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                        <input type="email" id="email" name="email" pattern="[^ @]*@[^ @]*"
+                            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-blue-500 col-span-2"
+                            placeholder="Your Email" required />
+                        <input type="phone" id="phone" name="phone"
+                            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-blue-500 col-span-2"
+                            placeholder="Your Phone" required />
+                        <textarea cols="10" rows="5" id="message" name="message"
+                            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-blue-500 col-span-2"
+                            placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="flex justify-center">
+                        <button
+                            class="focus:outline-none mt-5 bg-blue-500 px-5 py-2 text-white front-bold rounded-md shadow-md hover:bg-green-500">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    </section>
+</body>
